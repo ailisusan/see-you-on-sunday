@@ -1,0 +1,254 @@
+/*
+Theme Name: See you on sunday
+Theme URI: 
+Author: Susan Lehtinen @ Korskyrkan i Nyköping
+Author URI: www.korskyrkaninykoping.se
+Description:
+Version: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 
+Tags: 
+Status: DRAFT
+*/
+
+/*
+
+>>> TABLE OF CONTENTS:
+# Normalize
+# Accessibility
+# Alignments
+# Clearings
+# Typography
+# Forms
+# Buttons
+# Formatting
+# Lists
+# Tables
+# Navigation
+# Links
+# Layout
+	## Index
+  ## Posts
+	## Pages
+  ## Header
+  ## Footer
+# Comments
+# Widgets
+# Scrolling
+# Media
+	## Galleries
+# Adaptation for different screen sizes
+
+*/
+
+/* # NORMALIZE */
+
+/* # ACCESSIBILITY */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #5e5853;
+  display: block;
+  font-size: 13.2px;
+  font-size: 0.825rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/* # ALIGNMENTS */
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin: 0.4em 1.6em 0.4em 0;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin: 0.4em 0 0.4em 1.6em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* # TYPOGRAPHY */
+
+body {
+  color: #2b4257;
+  font-family: Gotu, Helvetica, Arial, Sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: the-seasons, Lora, Times, Serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* # FORMS */
+
+/* # FORMATTING */
+
+/* # LISTS */
+
+/* # TABLES */
+
+/* # LINKS */
+a {
+  color: #99908a;
+  transition: 0.3s;
+}
+a:visited {
+  color: #99908a;
+}
+a:hover, a:focus, a:active {
+  color: #383e44;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+/* # LAYOUT */
+
+/* # POSTS */
+
+/* # PAGES */
+
+/* ## INDEX */
+
+/* ## SITE HEADER */
+
+/* No custom header */
+
+/* ## SITE FOOTER */
+
+/* ## SOCIALS */
+
+/* # NAVIGATION */
+
+
+/* # MEDIA */
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+figure {
+  margin: 0 0 1.6em;
+}
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+.wp-caption {
+  font-size: 13.2px;
+  font-size: 0.825rem;
+  font-style: italic;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption .wp-caption-text {
+  margin: 0.8em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+/* ## GALLERIES */
+.gallery {
+  margin-bottom: 1.6em;
+}
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: .4em;
+  width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-caption {
+  display: block;
+  font-size: 13.2px;
+  font-size: 0.825rem;
+}
+
+
