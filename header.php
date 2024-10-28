@@ -6,10 +6,15 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Dosis|Cinzel|Gotu">
+<link rel="stylesheet" href="https://use.typekit.net/aik1xka.css">
+
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'affinity' ); ?></a>
 
