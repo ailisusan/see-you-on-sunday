@@ -158,6 +158,75 @@ a:hover, a:active {
 
 /* # NAVIGATION */
 
+.main-navigation {
+	position: fixed;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+	box-shadow: 2px 2px 10px #9ab2d4;
+	background-color: #0200f;
+	top: 0;
+	width: 100vw;
+	transition: 0.4s;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.main-navigation ul {
+  display: none;
+  margin: 0 0 1.6em;
+  list-style: none;
+}
+.main-navigation ul li {
+  	display: none;
+	list-style: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+.main-navigation.toggled > div {
+  clear: both;
+  background-color: white;
+  margin-left: -5%;
+  margin-right: -5%;
+  padding-top: .4em;
+  padding-bottom: .4em;
+}
+.main-navigation.toggled > div > ul > li {
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+}
+
+.menu-toggle {
+  background-color: transparent;
+  margin-right: 0;
+  outline: 0;
+  position: absolute;
+  top: .8em;
+  left: 100%;
+  -webkit-transform: translateX(-100%) translateX(-1.6em);
+  transform: translateX(-100%) translateX(-1.6em);
+}
+.menu-toggle:hover, .menu-toggle:active, .menu-toggle:focus {
+  background: transparent;
+}
+
+.no-custom-header .menu-toggle {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-bottom: 1.6em;
+  float: right;
+  -webkit-transform: none;
+  transform: none;
+}
+
 
 /* # MEDIA */
 
