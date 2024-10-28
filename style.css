@@ -150,15 +150,7 @@ a:hover, a:active {
 
 /* ## SITE HEADER */
 
-/* No custom header */
-
-/* ## SITE FOOTER */
-
-/* ## SOCIALS */
-
-/* # NAVIGATION */
-
-.main-navigation {
+.site-header {
 	position: fixed;
 	display: flex;
 	flex-flow: row wrap;
@@ -168,10 +160,34 @@ a:hover, a:active {
 	box-shadow: 2px 2px 10px #9ab2d4;
 	background-color: #0200f;
 	top: 0;
-	width: 100vw;
+	
 	transition: 0.4s;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.header-wrapper:
+	width: 100vw;
+}
+
+.site-title {
+	font-family: the-seasons, Lora;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 0 30% 0 0;
+	font-size: 14px;
+}
+
+/* No custom header */
+
+/* ## SITE FOOTER */
+
+/* ## SOCIALS */
+
+/* # NAVIGATION */
+
+.main-navigation {
+	
 }
 
 .main-navigation ul {
